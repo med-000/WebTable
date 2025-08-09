@@ -1,12 +1,15 @@
 import requests
 from bs4 import BeautifulSoup
 import re
+from dotenv import load_dotenv
+import os
+load_dotenv
 
 url="https://marco-s.ms.dendai.ac.jp/start/logining"
 
 
-USER=""
-PASSWORD=""
+USER=os.getenv('M_USER')
+PASSWORD=os.getenv('PASSWORD')
 
 session=requests.session()
 

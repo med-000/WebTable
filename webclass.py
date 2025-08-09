@@ -1,13 +1,17 @@
 import requests
 from bs4 import BeautifulSoup
 import re
+from dotenv import load_dotenv
+import os
+load_dotenv()
 
 url="https://els.sa.dendai.ac.jp/webclass/login.php"
 
 response=requests.get(url)
 
-USER=""
-PASSWORD=""
+USER=os.getenv('W_USER')
+PASSWORD=os.getenv('PASSWORD')
+
 
 session=requests.session()
 
