@@ -5,8 +5,8 @@ import re
 url="https://marco-s.ms.dendai.ac.jp/start/logining"
 
 
-USER="24AJ116"
-PASSWORD="h1720050509r1k1R!K!"
+USER=""
+PASSWORD=""
 
 session=requests.session()
 

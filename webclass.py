@@ -6,8 +6,8 @@ url="https://els.sa.dendai.ac.jp/webclass/login.php"
 
 response=requests.get(url)
 
-USER="24aj116"
-PASSWORD="h1720050509r1k1R!K!"
+USER=""
+PASSWORD=""
 
 session=requests.session()
 
